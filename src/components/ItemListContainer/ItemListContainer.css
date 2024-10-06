@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    margin-top: 40PX;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f3709c; 
+}
