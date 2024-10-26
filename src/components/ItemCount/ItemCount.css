@@ -34,20 +34,9 @@
     margin: 0;
 }
 
-
-.AddButton {
-    margin-top: 10px; 
-    background-color: #868276;
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 15px; 
-    cursor: pointer; 
-    font-size: 1.2rem; 
-    font-weight: bold; 
-    transition: background-color 0.3s ease;
+.Option {
+    margin-top: 25px;
 }
-
-.AddButton:hover {
-    background-color: #3f3d38; 
+.Option:hover {
+    background-color: #8b8472; 
 }

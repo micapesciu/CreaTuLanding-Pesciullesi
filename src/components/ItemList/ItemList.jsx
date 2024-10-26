@@ -1,12 +1,16 @@
-import './ItemList.css'
-import Item from '../Item/Item'
+import './ItemList.css';
+import Item from '../Item/Item';
 
-const ItemList = ({products}) => {
-    return(
+const ItemList = ({ products, category }) => {
+    const filteredProducts = category 
+        ? products.filter(prod => prod.category === category)
+        : products; // Si no hay categoría, devuelve todos los productos
+
+    return (
         <div className='ListGroup'>
-            {products.map(prod => <Item key={prod.id} {...prod} />)}
+            {filteredProducts.map(prod => <Item key={prod.id} {...prod} />)}
         </div>
-    )
-}
+    );
+};
 
-export default ItemList
+export default ItemList;

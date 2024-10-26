@@ -31,13 +31,10 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
             </picture>
             <section>
                 <p className='Info'>
-                    Categoria: {category}
+                    {description}
                 </p>
-                <p className='Info'>
-                    Descripcion: {description}
-                </p>
-                <p className='Info'>
-                    Precio: ${price}
+                <p className='Info Precio'>
+                    ${price}
                 </p>
             </section>
             <footer className='ItemFooter'>
