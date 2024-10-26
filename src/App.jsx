@@ -5,7 +5,9 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CartProvider } from './context/CartContext.jsx'
 
+
 function App() {
+
   return (
     <div className='App'>
       <BrowserRouter>
@@ -20,7 +22,7 @@ function App() {
         </CartProvider>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App
