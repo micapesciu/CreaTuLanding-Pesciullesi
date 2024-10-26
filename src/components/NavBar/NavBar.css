@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px black solid;
+    background-color: white;
+}
+
+.logo{
+    background-color: white;
+}
+
+.logo img {
+    height: 100px; 
+    background-color: white;
+}
+
+.navbar .Option {
+    margin: 10px;
+    padding: 10px 70px;
+    text-decoration: none; 
+    color: #5f5d58;
+    background-color: white;
+    font-size: 1.3rem;
+}
