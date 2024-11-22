@@ -1,0 +1,86 @@
+.CardCart {
+    background-color: #e4dfdf;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    height: auto;
+}
+
+.CardCart img {
+    width: 100px; 
+    height: auto;
+}
+
+.CardCart .text-item-cart {
+    margin: 5px 0;  
+    font-size: 16px; 
+    color: #333;
+}
+
+.CardCart button {
+    background-color: #ff5c5c; 
+    color: white; 
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.CardCart button:hover {
+    background-color: #e04d4d; 
+}
+
+.CardCartResumen {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px; 
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.CardCartResumen .text-info-cart {
+    font-size: 18px;
+    margin: 0; 
+}
+
+.CardCartResumen .Option {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 5px 0; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.CardCartResumen .Option:hover {
+    background-color: #45a049; 
+}
+
+.OptionVaciar {
+    background-color: #ff5c5c; 
+    color: white; 
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.OptionVaciar:hover {
+    background-color: #e04d4d; 
+}
