@@ -1,0 +1,101 @@
+.CheckoutContainer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.CheckoutContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.CheckoutContainer input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.CheckoutContainer input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.CheckoutContainer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.CheckoutContainer button:hover {
+    background-color: #45a049;
+}
+
+.OrderSuccess {
+    background: linear-gradient(135deg, #ffcc00, #e4dfdf, #fff9e6);  /* Degradado desde amarillo hasta el tono suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.OrderSuccess h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.OrderSuccess p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.OrderSuccess a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.OrderSuccess a:hover {
+    background-color: #45a049;
+}
+
+.OptionVaciar {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.OptionVaciar:hover {
+    background-color: #e04d4d;
+}
+
+h2 {
+    padding: 30px;
+}
+

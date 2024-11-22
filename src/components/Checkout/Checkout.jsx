@@ -4,6 +4,7 @@ import { CartContext } from '../../context/CartContext'
 import { Timestamp, collection, addDoc } from 'firebase/firestore'
 import db from '../../db/db.js'
 import { Link } from 'react-router-dom'
+import './Checkout.css'
 
 const Checkout = () => {
     const [dataForm, setDataForm] = useState({
@@ -43,20 +44,21 @@ const Checkout = () => {
     }
 
     return (
-        <div>
+        <div class="CheckoutContainer">
             {
                 idOrder === null ? (
                     <form onSubmit={handleSubmitForm}>
-                        <input type="text" name="fullname" value={dataForm.fullname} onChange={handleChangeInput} placeholder='Nombre'/>
-                        <input type="number" name="phone" value={dataForm.phone} onChange={handleChangeInput} placeholder='Celular'/>
-                        <input type="email" name="email" value={dataForm.email} onChange={handleChangeInput} placeholder='Email'/>
+                        <input type="text" name="fullname" value={dataForm.fullname} onChange={handleChangeInput} placeholder='Nombre' required />
+                        <input type="number" name="phone" value={dataForm.phone} onChange={handleChangeInput} placeholder='Celular' required />
+                        <input type="email" name="email" value={dataForm.email} onChange={handleChangeInput} placeholder='Email' required />
                         <button type='submit'>Terminar mi compra</button>
+                        <Link to="/cart" className="OptionVaciar">Cancelar</Link>
                     </form>
                 ) : (
                 <div>
-                    <h2>Orden generada correctamente</h2>
-                    <p>¡Gracias por elegir Dalia!</p>
-                    <Link to="/">Volver a la Tienda</Link>
+                    <h1 >Orden generada correctamente</h1>
+                    <h2>¡Gracias por elegir Dalia!</h2>
+                    <Link to="/" class="Option">Volver a la Tienda</Link>
                 </div>
                 )
             }
