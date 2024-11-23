@@ -4,7 +4,7 @@ import Item from '../Item/Item';
 const ItemList = ({ products, category }) => {
     const filteredProducts = category 
         ? products.filter(prod => prod.category === category)
-        : products; // Si no hay categoría, devuelve todos los productos
+        : products; 
 
     return (
         <div className='ListGroup'>

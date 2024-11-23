@@ -9,9 +9,9 @@ const CartWidget = () => {
     const totalQuantity = getTotalQuantity()
 
     return (
-        <Link to='/cart' className='CartWidget' style={{display: totalQuantity > 0 ? 'block' : 'none'}}>
-            <img className='CartImg' src={carrito} alt="cart-widget"/>
-            {totalQuantity}
+        <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none' }}>
+            <img className='CartImg' src={carrito} alt="cart-widget" />
+            {totalQuantity > 0 && <span className='numero'>{totalQuantity}</span>}
         </Link>
     )
 }

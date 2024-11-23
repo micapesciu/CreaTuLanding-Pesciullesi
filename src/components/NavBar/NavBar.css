@@ -20,7 +20,7 @@
     margin: 10px;
     padding: 10px 30px; 
     text-decoration: none; 
-    color: #5f5d58; 
+    color: #2e2b29; 
     background-color: white; 
     font-size: 1.3rem; 
     border-radius: 5px; 
@@ -28,11 +28,11 @@
 }
 
 .navbar .Option:hover {
-    background-color: #f0f0f0; 
+    background-color: #a78393; 
     padding: 10px 30px;
 }
 
 .navbar .ActiveOption {
     font-weight: bold; 
-    background-color: #e0e0e0; 
+    background-color: #a78393; 
 }

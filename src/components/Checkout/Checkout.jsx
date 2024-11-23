@@ -57,7 +57,8 @@ const Checkout = () => {
                 ) : (
                 <div>
                     <h1 >Orden generada correctamente</h1>
-                    <h2>¡Gracias por elegir Dalia!</h2>
+                    <h2>¡Gracias por elegir Dalia! ​💖​</h2>
+                    <p>Enviamos a tu mail toda la info de la compra</p>
                     <Link to="/" class="Option">Volver a la Tienda</Link>
                 </div>
                 )

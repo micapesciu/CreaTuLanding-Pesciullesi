@@ -8,39 +8,41 @@ const Cart = () => {
 
     if (getTotalQuantity() === 0) {
         return (
-            <div>
+            <div className="NoItemsContainer">
                 <h1>No hay items en el carrito</h1>
                 <Link to='/' className='Option'>Volver al inicio</Link>
             </div>
-        );
+        )
     }
 
     return (
         <div>
             <h1 className="title-cart">Productos en el carrito</h1>
             {
-                cart.map((item) => {
-                    console.log(item);  
-                    return (
-                        <div className='CardCart' key={item.id}>
-                            <img src={item.img} width={100} alt={item.name} />
-                            <p className="Info">{item.name}</p>
-                            <p className="Info">Precio por Unidad: ${item.price}</p>
-                            <p className="Info">Cantidad de Unidades: {item.quantity}</p>
-                            <button onClick={() => removeItem(item.id)}
-                            >Borrar Item</button>
+                cart.map((item) => (
+                    <div className='CardCart' key={item.id}>
+                        <img src={item.img} alt={item.name} />
+                        <div className="InfoContainer">
+                            <p>{item.name}</p>
+                            <p>Precio por Unidad: ${item.price}</p>
+                            <p>Cantidad de Unidades: {item.quantity}</p>
                         </div>
-                    )
-                })
+                        <div className="ActionsContainer">
+                            <button onClick={() => removeItem(item.id)}>Borrar Item</button>
+                        </div>
+                    </div>
+                ))
             }
     
             <div className='CardCartResumen'>
                 <p className="Info Precio">Precio total: ${totalPrice()}</p>
-                <button className='OptionVaciar' onClick={clearCart}>Vaciar carrito</button>
-                <Link className='Option' to="/checkout">Terminar mi compra</Link>
+                <div className="ButtonsContainer">
+                    <button className='OptionVaciar' onClick={clearCart}>Vaciar carrito</button>
+                    <Link className='Option' to="/checkout">Terminar mi compra</Link>
+                </div>
             </div>
         </div>
     )
 }
 
-export default Cart;
+export default Cart
